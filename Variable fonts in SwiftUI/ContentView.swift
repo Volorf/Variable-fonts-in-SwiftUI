@@ -49,7 +49,7 @@ struct ContentView: View
                         
                     } label: {
                         Image(systemName: "minus")
-                            .frame(width: 120.0, height: 64.0)
+                            .frame(maxWidth: .infinity, maxHeight: 64.0)
                             .imageScale(.large)
                             .foregroundColor(fontWeight > minFontWeight ? Color(darkColor) : Color(lightGrayColor))
                             .background(fontWeight > minFontWeight ? Color(whiteColor) : Color(white50))
@@ -68,13 +68,14 @@ struct ContentView: View
                         Image(systemName: "plus")
                             .imageScale(.large)
                             .foregroundColor(fontWeight < maxFontWeight ? Color(darkColor) : Color(lightGrayColor))
-                            .frame(width: 120.0, height: 64.0)
+                            .frame(maxWidth: .infinity, maxHeight: 64.0)
                             .background(fontWeight < maxFontWeight ? Color(whiteColor) : Color(white50))
                             .cornerRadius(8.0)
                     }
                     
                     
                 }
+                .padding(.horizontal, 16.0)
                 
             }
             .animation(.interpolatingSpring(stiffness: 300, damping: 10), value: fontWeight)
