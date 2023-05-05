@@ -1,4 +1,3 @@
-//
 //  ContentView.swift
 //  Variable fonts in SwiftUI
 //
@@ -7,15 +6,16 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct ContentView: View
+{
     
     @State private var fontWeight = 100.0
-    @State private var fontSize = 32.0
+    @State private var fontSize = 48.0
     
-    private var fontSizeStep = 20.0
+    private var fontSizeStep = 24.0
     private var fontWeightStep = 200.0
     
-    private var minFontSize = 32.0
+    private var minFontSize = 48.0
     private var maxFontSize = 96.0
     private var minFontWeight = 100.0
     private var maxFontWeight = 800.0
@@ -24,17 +24,21 @@ struct ContentView: View {
     private var darkColor = "Dark"
     private var whiteColor = "White"
     private var lightGrayColor = "Light Gray"
+    private var white50  = "White 50"
     
-    var body: some View {
+    var body: some View
+    {
         ZStack
         {
             Color(lightColor).ignoresSafeArea()
-            VStack {
+            VStack
+            {
                 Text("Variable fonts in SwiftUI").foregroundColor(Color(lightGrayColor))
                 Spacer()
                 Text("hello").font(.robotoFlex(size: fontSize, weight: fontWeight)).foregroundColor(Color(darkColor))
                 Spacer()
-                HStack (spacing: 16.0) {
+                HStack (spacing: 16.0)
+                {
                     Button{
                         print("Decreased")
                         if (fontWeight > minFontWeight)
@@ -48,10 +52,11 @@ struct ContentView: View {
                             .frame(width: 120.0, height: 64.0)
                             .imageScale(.large)
                             .foregroundColor(fontWeight > minFontWeight ? Color(darkColor) : Color(lightGrayColor))
-                            .background(Color(whiteColor))
+                            .background(fontWeight > minFontWeight ? Color(whiteColor) : Color(white50))
                             .cornerRadius(8.0)
                     }
-                    Button{
+                    Button
+                    {
                         print("Increased")
                         if (fontWeight < maxFontWeight)
                         {
@@ -64,7 +69,7 @@ struct ContentView: View {
                             .imageScale(.large)
                             .foregroundColor(fontWeight < maxFontWeight ? Color(darkColor) : Color(lightGrayColor))
                             .frame(width: 120.0, height: 64.0)
-                            .background(Color(whiteColor))
+                            .background(fontWeight < maxFontWeight ? Color(whiteColor) : Color(white50))
                             .cornerRadius(8.0)
                     }
                     
@@ -72,20 +77,23 @@ struct ContentView: View {
                 }
                 
             }
-            .animation(.interpolatingSpring(stiffness: 300, damping: 10), value: fontSize)
+            .animation(.interpolatingSpring(stiffness: 300, damping: 10), value: fontWeight)
             .padding()
         }
         
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
+struct ContentView_Previews: PreviewProvider
+{
+    static var previews: some View
+    {
         ContentView()
     }
 }
 
-extension Font {
+extension Font
+{
     static func robotoFlex(size: CGFloat, slant: CGFloat = 0, weight: CGFloat = 0) -> Font {
         let descriptor = UIFontDescriptor(fontAttributes: [
             .name: "Roboto Flex",
