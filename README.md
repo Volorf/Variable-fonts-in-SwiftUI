@@ -1,4 +1,4 @@
-# Variable-fonts-in-SwiftUI
+# Variable fonts in SwiftUI
 
 <img src="demo.gif" width="800">
 
