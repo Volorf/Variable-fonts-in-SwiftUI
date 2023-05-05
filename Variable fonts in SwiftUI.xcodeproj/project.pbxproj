@@ -7,18 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E41FAD402A058CF30092637D /* Variable_fonts_in_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41FAD3F2A058CF30092637D /* Variable_fonts_in_SwiftUIApp.swift */; };
+		E41FAD402A058CF30092637D /* VariableFontsInSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41FAD3F2A058CF30092637D /* VariableFontsInSwiftUIApp.swift */; };
 		E41FAD422A058CF30092637D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41FAD412A058CF30092637D /* ContentView.swift */; };
 		E41FAD442A058CF40092637D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E41FAD432A058CF40092637D /* Assets.xcassets */; };
 		E41FAD472A058CF40092637D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E41FAD462A058CF40092637D /* Preview Assets.xcassets */; };
+		E41FAD4E2A058DB50092637D /* RobotoFlex-VariableFont_GRAD,XTRA,YOPQ,YTAS,YTDE,YTFI,YTLC,YTUC,opsz,slnt,wdth,wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E41FAD4D2A058DB40092637D /* RobotoFlex-VariableFont_GRAD,XTRA,YOPQ,YTAS,YTDE,YTFI,YTLC,YTUC,opsz,slnt,wdth,wght.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E41FAD3C2A058CF30092637D /* Variable fonts in SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Variable fonts in SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E41FAD3F2A058CF30092637D /* Variable_fonts_in_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Variable_fonts_in_SwiftUIApp.swift; sourceTree = "<group>"; };
+		E41FAD3F2A058CF30092637D /* VariableFontsInSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VariableFontsInSwiftUIApp.swift; sourceTree = "<group>"; };
 		E41FAD412A058CF30092637D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E41FAD432A058CF40092637D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E41FAD462A058CF40092637D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E41FAD4D2A058DB40092637D /* RobotoFlex-VariableFont_GRAD,XTRA,YOPQ,YTAS,YTDE,YTFI,YTLC,YTUC,opsz,slnt,wdth,wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoFlex-VariableFont_GRAD,XTRA,YOPQ,YTAS,YTDE,YTFI,YTLC,YTUC,opsz,slnt,wdth,wght.ttf"; sourceTree = "<group>"; };
+		E41FAD4F2A058DC20092637D /* Variable-fonts-in-SwiftUI-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Variable-fonts-in-SwiftUI-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,7 +54,9 @@
 		E41FAD3E2A058CF30092637D /* Variable fonts in SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				E41FAD3F2A058CF30092637D /* Variable_fonts_in_SwiftUIApp.swift */,
+				E41FAD4F2A058DC20092637D /* Variable-fonts-in-SwiftUI-Info.plist */,
+				E41FAD4D2A058DB40092637D /* RobotoFlex-VariableFont_GRAD,XTRA,YOPQ,YTAS,YTDE,YTFI,YTLC,YTUC,opsz,slnt,wdth,wght.ttf */,
+				E41FAD3F2A058CF30092637D /* VariableFontsInSwiftUIApp.swift */,
 				E41FAD412A058CF30092637D /* ContentView.swift */,
 				E41FAD432A058CF40092637D /* Assets.xcassets */,
 				E41FAD452A058CF40092637D /* Preview Content */,
@@ -126,6 +131,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E41FAD472A058CF40092637D /* Preview Assets.xcassets in Resources */,
+				E41FAD4E2A058DB50092637D /* RobotoFlex-VariableFont_GRAD,XTRA,YOPQ,YTAS,YTDE,YTFI,YTLC,YTUC,opsz,slnt,wdth,wght.ttf in Resources */,
 				E41FAD442A058CF40092637D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,7 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E41FAD422A058CF30092637D /* ContentView.swift in Sources */,
-				E41FAD402A058CF30092637D /* Variable_fonts_in_SwiftUIApp.swift in Sources */,
+				E41FAD402A058CF30092637D /* VariableFontsInSwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +276,7 @@
 				DEVELOPMENT_TEAM = BW62R7MWZ5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Variable-fonts-in-SwiftUI-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +306,7 @@
 				DEVELOPMENT_TEAM = BW62R7MWZ5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Variable-fonts-in-SwiftUI-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
