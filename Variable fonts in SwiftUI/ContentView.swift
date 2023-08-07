@@ -79,7 +79,7 @@ struct ContentView: View
                 
             }
             .animation(.interpolatingSpring(stiffness: 300, damping: 10), value: fontWeight)
-            .padding()
+            .padding(16.0)
         }
         
     }
